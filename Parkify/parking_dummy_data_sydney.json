@@ -1,0 +1,482 @@
+[
+  {
+    "id": "7ac3b1e4-ae2a-4410-b292-d470d8b6de6d",
+    "title": "Parramatta Parking 60",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.101577,
+        -33.753658
+      ]
+    },
+    "price_per_hour": 3.31,
+    "status": "available",
+    "address": "128 King Street, Parramatta, NSW",
+    "description": "Secure and convenient parking at King Street in Parramatta.",
+    "created_at": "2024-10-18T07:15:39.322257"
+  },
+  {
+    "id": "3a3f9117-fbc0-4145-bba0-390fcfb177a4",
+    "title": "North Sydney Parking 85",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.122325,
+        -33.724441
+      ]
+    },
+    "price_per_hour": 8.79,
+    "status": "available",
+    "address": "181 Macquarie Street, North Sydney, NSW",
+    "description": "Secure and convenient parking at Macquarie Street in North Sydney.",
+    "created_at": "2024-08-04T07:15:39.322437"
+  },
+  {
+    "id": "a7930563-ab38-4fbd-ac8b-63dc40003651",
+    "title": "Chatswood Parking 83",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.050873,
+        -33.737204
+      ]
+    },
+    "price_per_hour": 5.86,
+    "status": "available",
+    "address": "83 Kent Street, Chatswood, NSW",
+    "description": "Secure and convenient parking at Kent Street in Chatswood.",
+    "created_at": "2025-03-27T07:15:39.322531"
+  },
+  {
+    "id": "97344e25-8f61-49ae-ba50-b4207de351c8",
+    "title": "Manly Parking 54",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.080164,
+        -33.721786
+      ]
+    },
+    "price_per_hour": 9.9,
+    "status": "available",
+    "address": "42 Military Road, Manly, NSW",
+    "description": "Secure and convenient parking at Military Road in Manly.",
+    "created_at": "2024-09-14T07:15:39.322560"
+  },
+  {
+    "id": "88436bea-53e6-4c8e-ae4c-fd408e09dbef",
+    "title": "Redfern Parking 51",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.27106,
+        -33.970517
+      ]
+    },
+    "price_per_hour": 4.39,
+    "status": "available",
+    "address": "162 Elizabeth Street, Redfern, NSW",
+    "description": "Secure and convenient parking at Elizabeth Street in Redfern.",
+    "created_at": "2024-10-16T07:15:39.322600"
+  },
+  {
+    "id": "beae4f32-8404-431e-b907-279d2e56ee28",
+    "title": "Bondi Parking 44",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.165258,
+        -33.772815
+      ]
+    },
+    "price_per_hour": 3.75,
+    "status": "available",
+    "address": "188 Harris Street, Bondi, NSW",
+    "description": "Secure and convenient parking at Harris Street in Bondi.",
+    "created_at": "2025-01-06T07:15:39.322647"
+  },
+  {
+    "id": "da2398e9-e525-446e-8929-73f759da6480",
+    "title": "Redfern Parking 96",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.176351,
+        -33.783462
+      ]
+    },
+    "price_per_hour": 8.3,
+    "status": "available",
+    "address": "39 Crown Street, Redfern, NSW",
+    "description": "Secure and convenient parking at Crown Street in Redfern.",
+    "created_at": "2024-05-21T07:15:39.322687"
+  },
+  {
+    "id": "e032cdee-0f0e-4ba3-bb18-11eca1821373",
+    "title": "Bondi Parking 39",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.104977,
+        -33.836126
+      ]
+    },
+    "price_per_hour": 3.14,
+    "status": "available",
+    "address": "103 Parramatta Road, Bondi, NSW",
+    "description": "Secure and convenient parking at Parramatta Road in Bondi.",
+    "created_at": "2025-02-11T07:15:39.322841"
+  },
+  {
+    "id": "a30ed722-e1d4-490f-ae3e-c3d14137ae3f",
+    "title": "Sydney Parking 65",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.10109,
+        -33.987623
+      ]
+    },
+    "price_per_hour": 7.67,
+    "status": "available",
+    "address": "79 York Street, Sydney, NSW",
+    "description": "Secure and convenient parking at York Street in Sydney.",
+    "created_at": "2025-03-20T07:15:39.322980"
+  },
+  {
+    "id": "a919b3a4-5321-4de1-b413-93f2529adca0",
+    "title": "Ultimo Parking 87",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.201765,
+        -33.815995
+      ]
+    },
+    "price_per_hour": 9.9,
+    "status": "available",
+    "address": "94 Kent Street, Ultimo, NSW",
+    "description": "Secure and convenient parking at Kent Street in Ultimo.",
+    "created_at": "2024-10-04T07:15:39.323020"
+  },
+  {
+    "id": "5b884bfd-99ef-4f6f-b688-fba6c6b976de",
+    "title": "North Sydney Parking 30",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.070934,
+        -33.738101
+      ]
+    },
+    "price_per_hour": 3.24,
+    "status": "available",
+    "address": "120 Kent Street, North Sydney, NSW",
+    "description": "Secure and convenient parking at Kent Street in North Sydney.",
+    "created_at": "2024-08-08T07:15:39.323081"
+  },
+  {
+    "id": "b0df5846-df20-40be-b8c4-62f6632f59d2",
+    "title": "Bondi Parking 9",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.19959,
+        -33.728732
+      ]
+    },
+    "price_per_hour": 6.9,
+    "status": "available",
+    "address": "18 Elizabeth Street, Bondi, NSW",
+    "description": "Secure and convenient parking at Elizabeth Street in Bondi.",
+    "created_at": "2024-08-06T07:15:39.323154"
+  },
+  {
+    "id": "4c60639f-f235-4b93-8bf9-256a5bf98414",
+    "title": "Ashfield Parking 87",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.174854,
+        -33.81474
+      ]
+    },
+    "price_per_hour": 6.04,
+    "status": "available",
+    "address": "20 Bondi Road, Ashfield, NSW",
+    "description": "Secure and convenient parking at Bondi Road in Ashfield.",
+    "created_at": "2025-04-13T07:15:39.323197"
+  },
+  {
+    "id": "b27d84b6-08e8-4f15-9414-1bbf066fa7ac",
+    "title": "North Sydney Parking 69",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.057183,
+        -33.855463
+      ]
+    },
+    "price_per_hour": 5.28,
+    "status": "available",
+    "address": "152 Macquarie Street, North Sydney, NSW",
+    "description": "Secure and convenient parking at Macquarie Street in North Sydney.",
+    "created_at": "2025-02-20T07:15:39.323214"
+  },
+  {
+    "id": "d9342129-ac34-44af-bbe7-9dc973f9017b",
+    "title": "Leichhardt Parking 21",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.007137,
+        -33.71798
+      ]
+    },
+    "price_per_hour": 6.27,
+    "status": "available",
+    "address": "33 Oxford Street, Leichhardt, NSW",
+    "description": "Secure and convenient parking at Oxford Street in Leichhardt.",
+    "created_at": "2024-09-10T07:15:39.323237"
+  },
+  {
+    "id": "7cd024eb-bde6-422e-837d-3910d11a280e",
+    "title": "Parramatta Parking 45",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.182306,
+        -33.93793
+      ]
+    },
+    "price_per_hour": 9.83,
+    "status": "available",
+    "address": "74 Macquarie Street, Parramatta, NSW",
+    "description": "Secure and convenient parking at Macquarie Street in Parramatta.",
+    "created_at": "2024-11-06T07:15:39.323264"
+  },
+  {
+    "id": "c667db28-a5f6-43cd-bea0-474d11aa40a1",
+    "title": "Ashfield Parking 18",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.235453,
+        -33.823796
+      ]
+    },
+    "price_per_hour": 3.0,
+    "status": "available",
+    "address": "199 Glebe Point Road, Ashfield, NSW",
+    "description": "Secure and convenient parking at Glebe Point Road in Ashfield.",
+    "created_at": "2024-06-25T07:15:39.323316"
+  },
+  {
+    "id": "85fff125-b836-4dbf-8d47-ef791e36f43a",
+    "title": "Surry Hills Parking 48",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.176168,
+        -33.754009
+      ]
+    },
+    "price_per_hour": 7.29,
+    "status": "available",
+    "address": "123 Anzac Parade, Surry Hills, NSW",
+    "description": "Secure and convenient parking at Anzac Parade in Surry Hills.",
+    "created_at": "2024-11-20T07:15:39.323345"
+  },
+  {
+    "id": "684dabe5-4366-4f6a-9af0-4910ed0b634b",
+    "title": "Bondi Parking 18",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.264352,
+        -33.93533
+      ]
+    },
+    "price_per_hour": 9.09,
+    "status": "available",
+    "address": "101 Parramatta Road, Bondi, NSW",
+    "description": "Secure and convenient parking at Parramatta Road in Bondi.",
+    "created_at": "2024-06-27T07:15:39.323360"
+  },
+  {
+    "id": "13637caf-e3f4-4323-b74b-ea18c99c279f",
+    "title": "Manly Parking 21",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.073546,
+        -33.870811
+      ]
+    },
+    "price_per_hour": 5.85,
+    "status": "available",
+    "address": "192 Military Road, Manly, NSW",
+    "description": "Secure and convenient parking at Military Road in Manly.",
+    "created_at": "2025-04-27T07:15:39.323375"
+  },
+  {
+    "id": "70aa4dbd-41e4-4e3a-ba21-0aeed54cfae0",
+    "title": "Mascot Parking 75",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.021487,
+        -33.870993
+      ]
+    },
+    "price_per_hour": 5.5,
+    "status": "available",
+    "address": "173 Pitt Street, Mascot, NSW",
+    "description": "Secure and convenient parking at Pitt Street in Mascot.",
+    "created_at": "2024-11-18T07:15:39.323430"
+  },
+  {
+    "id": "614e15a4-0b4a-41f8-9c6e-811f77759904",
+    "title": "Redfern Parking 84",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.233016,
+        -33.928767
+      ]
+    },
+    "price_per_hour": 5.85,
+    "status": "available",
+    "address": "98 Parramatta Road, Redfern, NSW",
+    "description": "Secure and convenient parking at Parramatta Road in Redfern.",
+    "created_at": "2024-08-19T07:15:39.323445"
+  },
+  {
+    "id": "6959bfea-2a90-4240-9aa5-f2735edb4ead",
+    "title": "Redfern Parking 58",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.148017,
+        -33.992288
+      ]
+    },
+    "price_per_hour": 7.45,
+    "status": "available",
+    "address": "72 Oxford Street, Redfern, NSW",
+    "description": "Secure and convenient parking at Oxford Street in Redfern.",
+    "created_at": "2024-12-05T07:15:39.323464"
+  },
+  {
+    "id": "e985d206-88c8-44ba-b457-3e7b5e7bdbde",
+    "title": "Sydney Parking 72",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.110814,
+        -33.810364
+      ]
+    },
+    "price_per_hour": 3.38,
+    "status": "available",
+    "address": "191 Elizabeth Street, Sydney, NSW",
+    "description": "Secure and convenient parking at Elizabeth Street in Sydney.",
+    "created_at": "2024-10-20T07:15:39.323493"
+  },
+  {
+    "id": "3fe390a2-05c4-4d1d-8d5c-54470089bfa7",
+    "title": "Mascot Parking 74",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.1328,
+        -33.83711
+      ]
+    },
+    "price_per_hour": 9.43,
+    "status": "available",
+    "address": "72 Crown Street, Mascot, NSW",
+    "description": "Secure and convenient parking at Crown Street in Mascot.",
+    "created_at": "2024-12-15T07:15:39.323538"
+  },
+  {
+    "id": "02b9bed0-9e95-47ff-bfff-024443e0a559",
+    "title": "Surry Hills Parking 52",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.117783,
+        -33.930521
+      ]
+    },
+    "price_per_hour": 3.6,
+    "status": "available",
+    "address": "163 Elizabeth Street, Surry Hills, NSW",
+    "description": "Secure and convenient parking at Elizabeth Street in Surry Hills.",
+    "created_at": "2024-07-20T07:15:39.323592"
+  },
+  {
+    "id": "114c6b2e-08f5-40d5-baba-2be98791b03e",
+    "title": "North Sydney Parking 15",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.151372,
+        -33.704277
+      ]
+    },
+    "price_per_hour": 9.32,
+    "status": "available",
+    "address": "124 Military Road, North Sydney, NSW",
+    "description": "Secure and convenient parking at Military Road in North Sydney.",
+    "created_at": "2024-11-07T07:15:39.323625"
+  },
+  {
+    "id": "24634982-39a1-4b0d-97fa-491e9046dade",
+    "title": "Bondi Parking 60",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.226991,
+        -33.965662
+      ]
+    },
+    "price_per_hour": 5.24,
+    "status": "available",
+    "address": "144 King Street, Bondi, NSW",
+    "description": "Secure and convenient parking at King Street in Bondi.",
+    "created_at": "2024-07-26T07:15:39.323659"
+  },
+  {
+    "id": "3f274e03-b9c8-41d2-b07a-f89f187fbb42",
+    "title": "Sydney Parking 39",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.095755,
+        -33.963513
+      ]
+    },
+    "price_per_hour": 6.39,
+    "status": "available",
+    "address": "155 Bondi Road, Sydney, NSW",
+    "description": "Secure and convenient parking at Bondi Road in Sydney.",
+    "created_at": "2024-09-01T07:15:39.323675"
+  },
+  {
+    "id": "80c2d539-7ef9-4b18-80e6-927767e0dee4",
+    "title": "North Sydney Parking 79",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        151.097306,
+        -33.940974
+      ]
+    },
+    "price_per_hour": 6.68,
+    "status": "available",
+    "address": "24 George Street, North Sydney, NSW",
+    "description": "Secure and convenient parking at George Street in North Sydney.",
+    "created_at": "2024-05-06T07:15:39.323693"
+  }
+]
