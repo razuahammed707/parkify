@@ -5,7 +5,7 @@
 //
 //  Created by Md Razu Ahammed Molla on 4/5/2025.
 //
-import SwiftUI
+//import SwiftUI
 
 
 import SwiftUI
@@ -16,37 +16,62 @@ struct SplashView: View {
     var body: some View {
         ZStack {
             // Background color
-            Color.primaryColor
+            Color(.white)
                 .ignoresSafeArea()
 
             VStack(spacing: 24) {
                 Spacer()
 
                 // Logo/Icon
-                Image(systemName: "car.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.white)
+                ZStack {
+                    // Background icon
+                    Image("parkingsign")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 70, height: 70)
+                        .opacity(0.7)
+
+                    // Foreground icon (car), slightly below the center
+                    Image(systemName: "car.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60, height: 60)
+                        .foregroundColor(.black)
+                        .offset(x: -20, y: 40)
+                        // Push it downward slightly
+                }
+                .padding()
+                
+                //Spacer()
 
                 // App Name
                 Text("Parkify")
                     .font(.system(size: 40, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
+                    .foregroundColor(Color.primaryColor)
 
                 // Tagline
-                Text("Smart Parking, Simplified.")
-                    .font(.headline)
-                    .foregroundColor(.white.opacity(0.85))
-
+        
                 Spacer()
 
                 // Optional loading indicator
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                    .scaleEffect(1.3)
-
-                Spacer()
+                VStack(spacing: 4) {
+                    
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: Color.primaryColor))
+                        .scaleEffect(1.3)
+                        .padding()
+                    
+                    
+                    Text("v1.0")
+                        .font(.caption)
+                        .foregroundColor(Color.primaryColor)
+                    
+                    
+                    Text("Smart Parking, Simplified.")
+                        .font(.headline)
+                        .foregroundColor(Color.primaryColor.opacity(0.85))
+                }
+                .padding(.bottom, 30)
             }
             .padding()
         }
@@ -60,4 +85,5 @@ struct SplashView: View {
 
 #Preview {
     SplashView()
+        .environmentObject(AppState())
 }
