@@ -1,64 +1,77 @@
-//
-//  AccountView.swift
-//  Parkify
-//
-//  Created by Md Razu Ahammed Molla on 4/5/2025.
-//
-
 import SwiftUI
 
 struct AccountView: View {
     @EnvironmentObject var appState: AppState
+    @AppStorage("email") private var email: String = "johndoe@example.com"
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 24) {
-                // 🔹 User Profile Section
-                VStack(spacing: 12) {
-                    Image(systemName: "person.crop.circle.fill")
-                        .resizable()
-                        .frame(width: 80, height: 80)
-                        .foregroundColor(.primaryColor)
+            VStack(spacing: 20) {
+                // Title
+                Text("Account")
+                    .font(.title)
+                    .bold()
+                    .padding(.top)
 
-                    Text("John Doe")
-                        .font(.title2)
-                        .fontWeight(.semibold)
+                // Profile Image
+                Image(systemName: "person.crop.circle.fill")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(.orange)
 
-                    Text("johndoe@example.com")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                }
-                .padding(.top)
+                // Email Display
+                Text(email)
+                    .foregroundColor(.orange)
+                    .font(.subheadline)
 
-                // 🔹 Options List
-                List {
-                    Section {
-                        NavigationLink(destination: Text("Edit Profile")) {
-                            Label("Edit Profile", systemImage: "pencil")
+                // Menu Options
+                VStack(spacing: 0) {
+                    // Edit Profile
+                    NavigationLink(destination: EditProfileView()) {
+                        HStack {
+                            Image(systemName: "pencil")
+                            Text("Edit Profile")
+                            Spacer()
+                            Image(systemName: "chevron.right")
                         }
-
-                        NavigationLink(destination: Text("Payment Methods")) {
-                            Label("Payment Methods", systemImage: "creditcard")
-                        }
+                        .padding()
                     }
 
-                    Section {
-                        Button(role: .destructive) {
-                            appState.isLoggedIn = false // simulate logout
-                        } label: {
-                            Label("Logout", systemImage: "arrow.backward.square")
+                    Divider()
+
+                    // Payment Methods
+                    NavigationLink(destination: PaymentMethodsView()) {
+                        HStack {
+                            Image(systemName: "creditcard")
+                            Text("Payment Methods")
+                            Spacer()
+                            Image(systemName: "chevron.right")
                         }
+                        .padding()
                     }
                 }
-                .listStyle(InsetGroupedListStyle())
+                .background(Color.white)
+                .cornerRadius(12)
+                .padding(.horizontal)
+
+                // Logout Button
+                Button(role: .destructive) {
+                    appState.isLoggedIn = false
+                } label: {
+                    HStack {
+                        Image(systemName: "arrow.backward.square")
+                        Text("Logout")
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(12)
+                }
+                .padding(.horizontal)
+
+                Spacer()
             }
-            .navigationTitle("Account")
-            .background(Color.white)
+            .background(Color(UIColor.systemGroupedBackground))
         }
-        .background(Color.white)
     }
-}
-
-#Preview {
-    AccountView()
 }
