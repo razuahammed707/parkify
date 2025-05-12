@@ -1,76 +1,14 @@
 import SwiftUI
 
-//struct LoginView: View {
-//    @EnvironmentObject var appState: AppState
-//
-//    @State private var email: String = ""
-//    @State private var password: String = ""
-//    @State private var errorMessage: String?
-//    @State private var isLoading = false
-//
-//    var body: some View {
-//        NavigationStack {
-//            VStack(spacing: 20) {
-//                Spacer()
-//
-//                Text("🚗 Parkify")
-//                    .font(.largeTitle)
-//                    .fontWeight(.bold)
-//
-//                Text("Login")
-//                    .font(.title2)
-//
-//                TextField("Email", text: $email)
-//                    .textFieldStyle(RoundedBorderTextFieldStyle())
-//                    .keyboardType(.emailAddress)
-//                    .autocapitalization(.none)
-//
-//                SecureField("Password", text: $password)
-//                    .textFieldStyle(RoundedBorderTextFieldStyle())
-//
-//                if let error = errorMessage {
-//                    Text(error)
-//                        .foregroundColor(.red)
-//                        .font(.caption)
-//                }
-//
-//                if isLoading {
-//                    ProgressView()
-//                }
-//
-//                Button("Log In") {
-//                    Task {
-//                        isLoading = true
-//                        do {
-//                            try await SupabaseService.shared.login(email: email, password: password)
-//                                appState.isLoggedIn = true
-//                        } catch {
-//                            errorMessage = error.localizedDescription
-//                        }
-//                        isLoading = false
-//                    }
-//                }
-//                .disabled(email.isEmpty || password.isEmpty)
-//                .buttonStyle(.borderedProminent)
-//
-//                NavigationLink("Don't have an account? Sign Up", destination: SignUpView())
-//
-//                Spacer()
-//            }
-//            .padding()
-//        }
-//    }
-//}
-
-
-import SwiftUI
-
 struct LoginView: View {
+    @EnvironmentObject var appState: AppState
+
     @State private var email = ""
     @State private var password = ""
     @State private var isPasswordVisible = false
     @State private var rememberMe = false
     @State private var isLoading = false
+    @State private var errorMessage: String?
 
     var body: some View {
         NavigationStack {
@@ -85,37 +23,34 @@ struct LoginView: View {
                     }
                     Spacer()
                 }
-                
+
                 ZStack {
-                    // Background icon
                     Image("parkingsign")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 70, height: 70)
                         .opacity(0.7)
 
-                    // Foreground icon (car), slightly below the center
                     Image(systemName: "car.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 60, height: 60)
                         .foregroundColor(.black)
                         .offset(x: -20, y: 40)
-                        // Push it downward slightly
                 }
                 .padding()
-                
-                // Title
+
                 Text("Sign in to Your Account")
                     .font(.title2)
                     .fontWeight(.semibold)
                     .padding(.top)
-                
-                // Fields
+
                 VStack(spacing: 16) {
                     TextField("Your Email Address", text: $email)
                         .textFieldStyle(.roundedBorder)
-                    
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.none)
+
                     HStack {
                         if isPasswordVisible {
                             TextField("Your Password", text: $password)
@@ -134,8 +69,7 @@ struct LoginView: View {
                     .cornerRadius(10)
                 }
                 .padding(.horizontal)
-                
-                // Remember Me & Forgot Password
+
                 HStack {
                     Button(action: {
                         rememberMe.toggle()
@@ -148,24 +82,34 @@ struct LoginView: View {
                                 .font(.footnote)
                         }
                     }
-                    
+
                     Spacer()
-                    
+
                     Button("Forgot Password") {
-                        // Add action
+                        // Add password reset logic
                     }
                     .font(.footnote)
                     .foregroundColor(Color.primaryColor)
                 }
                 .padding(.horizontal)
-                
-                // Sign In Button
+
+                if let error = errorMessage {
+                    Text(error)
+                        .foregroundColor(.red)
+                        .font(.caption)
+                        .padding(.horizontal)
+                }
+
                 Button(action: {
-                    isLoading = true
-                    // Simulate loading delay
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    Task {
+                        isLoading = true
+                        do {
+                            try await SupabaseService.shared.login(email: email, password: password)
+                            appState.isLoggedIn = true
+                        } catch {
+                            errorMessage = error.localizedDescription
+                        }
                         isLoading = false
-                        // Proceed with login logic
                     }
                 }) {
                     if isLoading {
@@ -184,31 +128,28 @@ struct LoginView: View {
                             .cornerRadius(16)
                     }
                 }
+                .disabled(email.isEmpty || password.isEmpty)
                 .padding(.horizontal)
-                
-                // Social Login
+
                 Spacer()
                 Spacer()
-                
-                // Bottom navigation
+
                 HStack {
                     Text("Don’t have an account?")
                         .foregroundColor(.secondary)
-                    Button("Sign Up") {
-                        // Navigate to Sign Up
-                    }
-                    .foregroundColor(Color.primaryColor)
-                    .fontWeight(.semibold)
+                    NavigationLink("Sign Up", destination: SignUpView())
+                        .foregroundColor(Color.primaryColor)
+                        .fontWeight(.semibold)
                 }
                 .font(.footnote)
-                
+
                 Spacer()
             }
             .padding(.top)
+            .ignoresSafeArea(.keyboard)
         }
     }
 }
-
 
 #Preview {
     LoginView().environmentObject(AppState())

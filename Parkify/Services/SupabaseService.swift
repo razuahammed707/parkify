@@ -23,4 +23,7 @@ class SupabaseService {
     func isUserLoggedIn() -> Bool {
         return client.auth.currentSession != nil
     }
+    func signUp(email: String, password: String) async throws {
+        try await client.auth.signUp(email: email, password: password)
+    }
 }
