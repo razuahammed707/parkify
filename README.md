@@ -37,3 +37,27 @@ Models:
 Account Setting
     - Update user setting
     - Update and add payment method
+
+
+----------
+Files Created/ Updated by Amrita
+
+The Account folder handles user profile and payment-related screens in the Parkify app. Key views include:
+
+- `AccountView.swift`
+  - Main screen for the account section
+  - Displays user email
+  - Provides navigation to edit profile and payment methods
+
+- `EditProfileView.swift`
+  - Allows editing of user profile details (e.g., name, email, birthday, country)
+  - Simple and user-friendly form layout
+
+- `AddCardView.swift`
+  - UI for adding new payment cards securely
+  - Includes field validation and smooth data submission
+
+- `PaymentMethodsView.swift`
+  - Shows all stored payment methods
+  - Lets users add, update, or delete cards
+  - Integrates with `AddCardView` for new entries
