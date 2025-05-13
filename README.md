@@ -1,4 +1,21 @@
-What I’ve Done:
+## 👨‍💻 Team Contributions
+
+**Md Razu Ahammed Molla** led the initial phase of the project. His contributions include:
+
+-  Project scaffolding and environment setup
+- Creation of initial module and folder structure
+- Supabase service integration
+- Implementation of global app state
+- Setup of RootView as the app's base layout
+- Development of the main tab navigation system
+- Laying the groundwork for a scalable architecture
+- Implemented Booking List
+- Implemented the Booking Details View
+- Integrated all team members’ code into the main repository
+
+---
+
+Deep Patel
 
 I worked on the Home screen module of the Parkify iOS app. My responsibilities included:
 
@@ -9,8 +26,6 @@ I worked on the Home screen module of the Parkify iOS app. My responsibilities i
 - Developing an interactive Map View with tappable annotations
 - Adding a dynamic bottom sheet that shows parking spot details and a "Book Parking" button
 - Structuring everything using `HomeViewModel` for state management
-
----
 
 Files I Created or Updated:
 
@@ -61,3 +76,5 @@ The Account folder handles user profile and payment-related screens in the Parki
   - Shows all stored payment methods
   - Lets users add, update, or delete cards
   - Integrates with `AddCardView` for new entries
+ 
+  ---
