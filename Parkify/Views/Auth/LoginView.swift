@@ -62,6 +62,8 @@ import SwiftUI
 //    }
 //}
 
+// Create auth and splash view
+
 
 import SwiftUI
 
