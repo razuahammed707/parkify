@@ -34,3 +34,7 @@ Models:
     - `coordinate` for map
     - `imageName` for dummy image binding
     - `distance` for UI testing
+ 
+Account Setting
+    - Update user setting
+    - Update and add payment method
