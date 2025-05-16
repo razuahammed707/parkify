@@ -19,7 +19,7 @@ Github Link : https://github.com/razuahammed707/parkify.git
 
 ---
 
-Deep Patel
+**Deep Patel (25135765)**
 
 I worked on the Home screen module of the Parkify iOS app. My responsibilities included:
 
@@ -59,7 +59,7 @@ Account Setting
 
 
 ----------
-Files Created/ Updated by Amrita
+Files Created/ Updated by **Amrita (25539798)**
 
 The Account folder handles user profile and payment-related screens in the Parkify app. Key views include:
 
@@ -83,6 +83,7 @@ The Account folder handles user profile and payment-related screens in the Parki
  
   ---
 
+**  Aya Issa**
   Files Created/ Updated by Aya Issa
 
   - Splash screen
