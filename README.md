@@ -4,7 +4,7 @@ Github Link : https://github.com/razuahammed707/parkify.git
 
 ## 👨‍💻 Team Contributions
 
-**Md Razu Ahammed Molla** led the initial phase of the project. His contributions include:
+**Md Razu Ahammed Molla (24699441)** by led the initial phase of the project. His contributions include:
 
 -  Project scaffolding and environment setup
 - Creation of initial module and folder structure
