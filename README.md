@@ -78,3 +78,9 @@ The Account folder handles user profile and payment-related screens in the Parki
   - Integrates with `AddCardView` for new entries
  
   ---
+
+  Files Created/ Updated by Aya Issa
+
+  - Splash screen
+  - Authentication Screen & Verification
+  - Loing screen and all the screens for sign-up.
